@@ -1,0 +1,280 @@
+body {
+	background: url("../images/bg.png") repeat;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	}
+
+#container {
+	width: 100%;
+	}
+
+header {
+	background: linear-gradient(180deg, #e2ddeb 0%, #C9F600 5%, #9FB82E 50%, #C9F600 95%, #e2ddeb 100% );
+	border-bottom: 1px solid #06435e;
+	height: 100px;
+	padding: 0;
+	}
+
+header h1 {
+	color: #fff;
+	float: left;
+	font-size: 210%;
+	margin: 10px 0px 10px 0px;
+	}
+
+#topmenu {
+	float: right;
+	padding: 40px 0px 30px;
+	margin: 0;
+	list-style: none;
+	}
+
+
+
+#topmenu a {
+	color: #fdfeff;
+	display: block;
+	padding: 5px 7px;
+	text-decoration: none;
+	}
+
+#topmenu a:hover, #topmenu a.active {
+	background-color: #086d97;
+	border: 1px solid #06445e;
+	border-radius: 5px;
+	padding: 4px 6px ;
+	}
+
+#image {
+	float: left;
+	width: 150px;
+	padding: 0;
+	margin: 3px;
+}	
+
+#reg input[type="text"], #reg input[type="password"] {
+	background-color: #f7f7f7;
+	border: none;
+	border-radius: 5px;
+	color: #23252b;
+	height: 22px;
+	width: 100px;
+	}	
+
+#topmenu li {
+	float: left;
+}
+
+#log {
+	padding: 0 0 0 15px;
+	float: left;
+	}
+
+
+
+#top {
+	width: 100%;
+	}
+
+#top a {
+	color: #fdfeff;
+	display: block;
+	padding: 9px 7px 5px;
+	text-decoration: none;
+	}
+
+
+#top a:hover, #top a.active {
+	background-color: #086d97;
+	border: 1px solid #06445e;
+	border-radius: 5px;
+	padding: 8px 6px 4px;
+	}
+
+#top {
+	background: linear-gradient(180deg, #8BF13C 0%, #62E200 50%, #8BF13C 100% );
+	border-bottom: 1px solid #06435e;
+	height: 40px;
+	padding: 0;
+	}
+
+
+#search {
+	float: right;
+}
+
+#search input[type="text"] {
+	background-color: #f7f7f7;
+	border: none;
+	border-radius: 5px;
+	color: #23252b;
+	height: 22px;
+	padding-left: 5px;
+	width: 263px;
+}
+
+#search input[type="submit"] {
+	background: url("../images/поиск.png") no-repeat center center;
+	border: none;
+	cursor: pointer;
+	height: 22px;
+	margin-left: -4px;
+	width: 31px;	
+}
+
+
+
+#content {
+	margin: 10px 10px;
+}
+
+.block {
+	box-shadow: 4px 5px 5px #dddcdd;
+	margin-bottom: 20px;
+	width: 220px;
+}
+
+.block .header {
+	background: linear-gradient(180deg, #8BF13C 0%, #62E200 60%, #62AA2A 61%, #409300 100%);
+	color: #fff;
+	border-radius: 10px 10px 0 0;
+	font-size: 120%;
+	padding: 10px 10px 8px 10px;
+}
+
+.block .content {
+	background-color: #E1FA71;
+	border-bottom: 2px solid #fff;
+	border-left: 2px solid #fff;
+	border-radius: 0 0 5px 5px;
+	border-right: 2px solid #fff;
+	padding: 10px 5px;
+}
+
+#add ul {
+	margin: 0;
+	list-style: none;
+	padding: 10px;
+	}
+#add p {
+	margin: 5px;
+	}
+
+#add ul ul {
+	margin: 0;
+	list-style: none;
+	padding: 0px;
+	}
+
+
+
+.radio {
+	margin: 0 0 5px 0;
+}	
+
+
+.block .button {
+	border-radius: 8px;
+	color: #06445e;
+	cursor: pointer;
+	display: inline-block;
+	padding: 3px 15px;
+	text-decoration: none;
+	background-color: #6798da;
+}
+
+#right {
+	float: right;
+}
+ #left {
+ 	float: left;
+ }
+
+ #Reduct a {
+	display: block;
+	padding: 5px 7px;
+	text-decoration: none;
+	}
+
+#Reduct div {
+ 	float: right;
+
+} 
+
+#profid {
+	width: 100%;
+}
+
+.pro {
+	padding: 0 10px;
+}
+
+.pro img {
+	height: 100px;
+	width: 100px;
+}
+
+.block #quote {
+	margin-bottom: -5px;
+}
+
+.block #quote p {
+	font-size: 80%;
+	margin-bottom: 5px;
+}
+
+
+
+.block #subscribe .button, .block #poll .button {
+	background-color: #f0b017;
+	border-bottom: 2px solid #976c05;
+	border-left: 1px solid #976c05;
+	border-right: 1px solid #976c05;
+	border-top: 1px solid #976c05;
+}
+
+.block #subscribe .button {
+	margin: 8px 0 0 15px;
+}
+
+.block #vk .button {
+	background-color: #567ca1;
+	border-bottom: 2px solid #2c567e;
+	margin: 11px 0 0 15px;
+}
+
+#center {
+	margin: 0 250px;
+}
+
+.main {
+	background: linear-gradient(180deg, #fff, #E1FA71);
+	border: 2px solid #fff;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	padding: 15px;
+	overflow: hidden;
+}
+
+footer {
+	background: linear-gradient(180deg, #8BF13C 0%, #62E200 50%, #8BF13C 100% );
+	border-bottom: 1px solid #05435e;
+	color: #fff;
+	padding: 5px 0;
+	text-align: center;
+	clear: both;
+}
+
+footer .sep {
+	border-top: 1px dashed #033246;
+	height: 8px;
+	margin: 0 auto;
+	width: 99%;
+}
+
+footer p {
+	font-size: 95%;
+	margin: 0;
+
+}

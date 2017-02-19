@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Календарь личных дел</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	<script src="dist/js/datepicker.min.js"></script>
+	<link rel="stylesheet" href="styles/main.css" type="text/css" />
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<link href="dist/css/datepicker.min.css" rel="stylesheet" type="text/css">
+        
+</head>
+<body>
+	<div id="container">
+		<header>
+		    <nav>
+			    <div id="image"><img src="images/Логотип.png" alt=""/></div>
+			    <h1 id="name_head"> Календарь <br>личных дел</h1>
+				<ul id="topmenu">
+				    <li id="reg">
+						<form name="auth" action="#" method="post">
+								<div >
+										<input type="text" name="login" placeholder="Логин" />
+										<input type="password" name="password" placeholder="Пароль" />
+								</div>
+						</form>
+					</li>
+					<li class="reg">
+						<a href="#">
+							<span>Войти</span>
+						</a>
+					</li>
+					<li class="reg">
+						<a href="#">
+							<span>Регистрация</span>
+						</a>
+					</li>
+					<li class="reg">
+						<a href="#">
+							<span>Забыли пароль?</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<div id="top">
+
+			<div id="search">
+				<form name="search" action="#" method="get">
+					<table id="support">
+						<tr>
+							<td>
+						 	<a href="#"><span>Поддержка</span></a>	
+							</td>
+							<td>
+								<img src="images/расделитель.png" alt=""/>
+							</td>
+							<td>
+								<input type="submit" name="search" value="" />
+							</td>
+							<td>
+								<input type="text" name="query" placeholder="Поиск" />
+							</td>
+						</tr>
+					</table>
+				</form>
+			</div>
+		</div>
+
+			<div id="content">
+						<div id="left">	
+							<div class="block">
+										<div class="header">Добавь задание</div>
+										<div class="content">
+											<div id="add">
+												<ul>
+													<li>
+														<ul id="time">
+															<li><p>Добавить время и дату:</p></li>
+															<li><span>  
+															<input type='text' class='datepicker-here' data-timepicker="true" multipleDates="true" value="Добавить дату" /></span></li>			
+								       					</ul> 
+													</li>
+													<li>
+														<p>Задание:</p>
+														<input id="name_task" type="text" name="text_task" value="Введите названи задания">
+													</li>
+													<li>
+														<p>Описание задания:</p>
+														<input id="text" type="text" name="text_disreb" value="Введите описание задания">
+													</li>
+													<li class="radio">
+														<p>Cложность задания:</p>
+														<form name="poll" action="#" method="post">
+														<div>
+															<input id="poll_id_1" type="radio" name="poll_id" value="1" />
+															<label for="poll_id_1">очень легко</label>
+														</div>
+														<div>
+															<input id="poll_id_2" type="radio" name="poll_id" value="2" />
+															<label for="poll_id_2">легко</label>
+														</div>
+														<div>
+															<input id="poll_id_3" type="radio" name="poll_id" value="3" />
+															<label for="poll_id_3">средне</label>
+														</div>
+														<div>
+															<input id="poll_id_4" type="radio" name="poll_id" value="4" />
+															<label for="poll_id_4">тяжело</label>
+														</div>
+														<div>
+															<input id="poll_id_5" type="radio" name="poll_id" value="5" />
+															<label for="poll_id_5">очень тяжело</label>
+														</div>
+														</form>
+													</li>
+													<li>
+														<div>
+														<input type="submit" name="poll" value="Добавить" class="button" />
+														</div>
+													</li>
+												</ul>
+											</div>
+											<div class="clear"></div>
+										</div>
+							</div>
+								<div class="block">
+									<script type="text/javascript" src="js/vk.js"></script>
+											<!-- VK Widget -->
+											<div id="vk_groups"></div>
+											<script type="text/javascript">
+															VK.Widgets.Group("vk_groups", {mode: 0, width: "220", height: "400", color1: 'FFFFFF', color2: '346388', color3: '1374A2'}, 25691304);
+											</script>
+							</div>	
+						</div>	
+						<div id="right">	
+							<div class="block">
+										<div class="header">Мой профиль</div>
+										<div class="content">
+											<div class="pro">
+												<img src="images/camera_200.png" alt="Моё личное фото" />
+												<table id="profid">
+													<tr><td>Фамилия:</td></tr>
+													<tr><td>Имя:</td></tr>
+													<tr><td>Отчество:</td></tr>
+													<tr><td>Дата рождения:</td></tr>
+													<tr><td id="Reduct"><div>
+														<input type="submit" name="poll" value="Редактировать" class="button" />
+														</div>
+														</td>
+													</tr>
+												</table>
+											</div>
+											<div class="clear"></div>
+										</div>
+							</div>			
+							<div class="block">
+									<div class="header">Подписка</div>
+									<div class="content">
+										<div id="subscribe_vk">
+											<div id="subscribe">
+												<p>Подписавшись по <b>E-mail</b>, Вы будете получать уведомления о новых статьях.</p>
+												<img src="images/icon_rss.png" alt="Подписка" />
+												<a href="#" class="button">Подписаться</a>
+											</div>
+											<div class="clear"></div>
+											<img id="subscribe_vk_sep" src="images/menu_sep.png" alt="" />
+											<div class="clear"></div>
+											<div id="vk">
+												<p>Добавляйтесь ко мне в друзья <b>ВКонтакте</b>! Отзывы о сайте и обо мне оставляйте на стене моего аккаунта.</p>
+												<img src="images/icon_vk.png" alt="Мой аккаунт" />
+												<a href="#" class="button">Мой аккаунт</a>
+											</div>
+										</div>
+										<div class="clear"></div>
+									</div>
+								</div>
+							<div class="block">
+										<div class="header">Умные цитаты</div>
+											<div class="content">
+												<div id="quote">
+												<p>Ты никогда не решишь проблему, если будешь думать так же, как те, кто ее создал.</p>
+												<p class="right"><i>Альберт Эйнштейн</i></p>
+												</div>
+											</div>
+										</div>	
+							</div>
+						<div id="center">
+							<div class="main">
+								<article>
+									<h1>Как создать свой сайт</h1>
+									<div class="article_img">
+										<img src="images/site.png" alt="Как создать свой сайт" />
+									</div>
+									<p><b>Как создать свой сайт</b> – этот вопрос задаёт себе огромное количество людей, недаром он вводится только в одном Yandex примерно 1000 раз в сутки. Не меньше сайтов пытаются ответить на этот вопрос. Я видел много страниц, посвящённых теме создания сайта, его регистрации и раскрутки. Но я за свою практику не встретил ни одного сайта, который объединил бы все эти неразделимые темы воедино. </p>
+									<p>И для восполнения этого пробела и был создан данный сайт. На этом сайте Вы сможете найти массу информации по теме: <b>как создать сайт, как раскрутить свой сайт</b>.</p> 
+									<p><span class="red">Но прежде, чем Вы будете знакомиться с темой создания и раскрутки сайта, я хочу Вас предупредить о следующем:</span></p>
+									<p><b>1)</b> Многие думают, что создать сайт – это очень просто и быстро. И самое интересное, что в чём-то они правы. Действительно, существует большое количество CMS (систем управления контентом), которые позволяют создать сайт буквально за считанные минуты. Но вынужден Вас огорчить: создать сайт – это дело часто быстрое, а вот наполнить его полезным содержимым – дело, порой, нескольких лет.</p>
+									<p><b>2)</b> Многие думают, что создать сайт – это очень сложно. Опять же – всё относительно. Смотря, какой сайт. Создать сайт на какой-нибудь CMS – очень просто, а вот разработать огромный портал с нуля да ещё и с кучей PHP-скриптов – это дело весьма сложное.</p>
+									<p>И те, и другие в чём-то правы, а в чём-то нет. Но я хочу, чтобы Вы усвоили: создание сайта – это дело, которое способен освоить практически любой человек, даже школьник, но чтобы стать профессионалом - придётся много работать. И данный портал поможет Вам освоить данную науку, причём Вы узнаете о том, как создать сложный сайт с использованием PHP и MySQL и, быть может, с использованием XML, и как создать простой сайт с использованием CMS. А после создания Вы сможете разместить свой сайт в Интернете, а после уже узнаете, как раскрутить сайт и сможете вывести свой сайт в TOP Yandex.</p>
+									
+								</article>
+							</div>
+		</div>	
+			</div>		
+				<footer>
+			<div class="sep"></div>
+			<!-- Yandex.Metrika counter -->
+			<div style="display:none;">
+				<script type="text/javascript">
+					(function(w, c) {
+						(w[c] = w[c] || []).push(function() {
+						   try {
+							  w.yaCounter3932665 = new Ya.Metrika(3932665);
+							   yaCounter3932665.clickmap(true);
+							   yaCounter3932665.trackLinks(true);     
+						   } catch(e) { }
+					   });
+					})(window, 'yandex_metrika_callbacks');
+				</script>
+			</div>
+			<script src="/mc.yandex.ru/metrika/watch.js" type="text/javascript" defer="defer"></script>
+			<noscript>
+				<div style="position:absolute">
+					<img src="/mc.yandex.ru/watch/3932665" alt="" />
+				</div>
+			</noscript>
+			<!-- /Yandex.Metrika counter -->
+			<!--LiveInternet counter-->
+			<script type="text/javascript">
+			<!--
+				document.write("<a href='http://www.liveinternet.ru/click' "+
+				"target=_blank><img src='//counter.yadro.ru/hit?t21.11;r"+
+				escape(document.referrer)+((typeof(screen)=="undefined")?"":
+				";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+				screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+				";"+Math.random()+
+				"' alt='' title='LiveInternet: показано число просмотров за 24"+
+				" часа, посетителей за 24 часа и за сегодня' "+
+				"border='0' width='88' height='31'><\/a>")
+			//-->
+			</script>
+			<!--/LiveInternet-->
+			<!-- Rating@Mail.ru counter -->
+			<script type="text/javascript">
+				//<![CDATA[
+				var a='';js=10;d=document;
+				try{a+=';r='+escape(d.referrer);}catch(e){}try{a+=';j='+navigator.javaEnabled();js=11;}catch(e){}
+				try{s=screen;a+=';s='+s.width+'*'+s.height;a+=';d='+(s.colorDepth?s.colorDepth:s.pixelDepth);js=12;}catch(e){}
+				try{if(typeof((new Array).push('t'))==="number")js=13;}catch(e){}
+				try{d.write('<a href="http://top.mail.ru/jump?from=1883459"><img src="http://dd.cb.bc.a1.top.mail.ru/counter?id=1883459;t=230;js='+js+
+				a+';rand='+Math.random()+'" alt="Рейтинг@Mail.ru" style="border:0;" height="31" width="88" \/><\/a>');}catch(e){}
+				//]]>
+			</script>
+			<noscript>
+				<p>
+					<a href="http://top.mail.ru/jump?from=1883459">
+						<img src="http://dd.cb.bc.a1.top.mail.ru/counter?js=na;id=1883459;t=230" style="border: 0; height: 31px; width: 88px;"
+						alt="Рейтинг@Mail.ru" />
+					</a>
+				</p>
+			</noscript>
+			<!-- //Rating@Mail.ru counter -->
+			<!-- begin of Top100 code -->
+			<script id="top100Counter" type="text/javascript" src="http://counter.rambler.ru/top100.jcn?2243752"></script>
+			<noscript>
+				<p>
+					<a href="http://top100.rambler.ru/navi/2243752/">
+						<img src="http://counter.rambler.ru/top100.cnt?2243752" alt="Rambler's Top100" />
+					</a>
+				</p>
+			</noscript>
+		</footer>
+	</div>	
+</body>
+
+		
